@@ -1,6 +1,8 @@
 # LLM Application Developer — Job Requirements
 
-_Generated 2026-08-02. Sample: 31 postings from 2026-05 through 2026-08 on Greenhouse and SmartRecruiters. Titles pooled: "LLM Application Developer", "Generative AI Developer", "AI Application Engineer", "LLM App Engineer", "GenAI Developer", "GenAI Application Engineer", and entry-to-mid "AI Engineer" listings._
+_Refreshed 2026-09-02 (previous pass 2026-08-02). Sample: the original 31-posting 2026-08 baseline plus a 27-posting refresh observed 2026-09-02, deduplicated to **55 unique postings** across 2026-05-01 through 2026-09-02 (all within the last-90-day window per the research packet). Sources: Greenhouse and SmartRecruiters. Titles pooled: "LLM Application Developer", "Generative AI Developer", "AI Application Engineer", "LLM App Engineer", "GenAI Developer", "GenAI Application Engineer", and entry-to-mid "AI Engineer" listings._
+
+_The 2026-09 refresh reported ratios below use the fresh 27-quote-verified subset (denominator 27) where the requirement is called out explicitly. The 2026-08 baseline ratios (denominator 31) are preserved as the primary rank because both samples fall inside the 90-day window and the 2026-09 pass largely confirmed the rank order rather than displacing it._
 
 Machine-readable form: [`.aicg/job-requirements.json`](.aicg/job-requirements.json).
 
@@ -47,7 +49,7 @@ Machine-readable form: [`.aicg/job-requirements.json`](.aicg/job-requirements.js
 
 ### Streaming responses and async orchestration — 8/31 (26%) — below threshold
 
-- **Coverage:** `gap-below-threshold`. Legitimate territory for this role but under the 30% bar. Track next cycle.
+- **Coverage:** `gap-below-threshold`. Legitimate territory for this role but under the 30% bar. 2026-09 refresh: 2/27 explicit mentions (Future, Anthropic Voice) — no upward drift, still tracked for next cycle.
 - Evidence:
   - Future, "Applied AI Engineer": "tool-calling LLM systems with structured output, parallel API orchestration, and streaming responses." [posting](https://job-boards.greenhouse.io/future/jobs/4683133005)
   - Future, "Applied AI Engineer": "async Python, HTTP APIs, and streaming protocols (SSE, webhooks)." [posting](https://job-boards.greenhouse.io/future/jobs/4683133005)
@@ -134,15 +136,22 @@ These show up frequently in postings but are covered by general software-enginee
 
 ## Below-threshold / niche requirements (tracked, not adopted this cycle)
 
-| Requirement | Frequency | Notes |
+| Requirement | Frequency (baseline / 2026-09 refresh) | Notes |
 | --- | --- | --- |
-| MCP / agent-SDK familiarity | 4/31 (13%) | Track for next cycle; ownership would sit with [Agentic AI Developer](https://github.com/ai-engineering-curriculum/agentic-ai-developer-learning). |
-| Computer use / browser automation | 3/31 (10%) | Niche; owned by Agentic AI Developer if adopted. |
-| Enterprise-system integration (Salesforce/SAP/ServiceNow) | 5/31 (16%) | Employer-specific; out of scope for a level-20 learning track. |
-| Domain compliance (HIPAA / SOC 2 / FedRAMP) | 7/31 (23%) | Employer-specific; belongs to Applied AI Engineer or the governance curriculum. |
+| MCP servers, MCP tool-server development, agent-SDK familiarity | 4/31 (13%) → 4/27 (15%) | **Signal hardening:** in the 2026-09 refresh MCP graduated from "familiar with the modern AI stack" phrasing to concrete build-and-operate asks (Indicium AI: "Architect and deploy custom data interfaces and tool servers using the Model Context Protocol (MCP)"; Vericast: "Design and build MCP Server integrations"; Anthropic: "MCP development"). Still below the 30% bar and ownership would sit with [Agentic AI Developer](https://github.com/ai-engineering-curriculum/agentic-ai-developer-learning) per the ownership rule, so no adoption here. Elevated to top of watch list. |
+| Computer use / browser automation (Playwright, CUA) | 3/31 (10%) → 4/27 (15%) | **Signal hardening:** Snorkel AI now hires explicitly for a "CUA (Computer Use Agents)" specialty and Kargo asks for Playwright-based agent workflows. Still niche, still owned by Agentic AI Developer if adopted. Watch list. |
+| LLM observability / tracing as a distinct sub-specialty (Langfuse, Braintrust, LangSmith, OpenTelemetry for LLMs) | 15/31 (48%) → 4/27 (15%) explicit + one dedicated title (Honeycomb "LLM Observability") | 2026-09 refresh confirms this has bifurcated into (a) generic observability expectations in most senior GenAI roles and (b) a dedicated hiring track at observability vendors (Honeycomb, Glean, ID.me). Depth remains delegated to [AI Evaluation Engineer](https://github.com/ai-engineering-curriculum/ai-eval-engineer-learning). |
+| Voice / multimodal agents (real-time voice, ASR/TTS in the agent loop) | not sampled in 2026-08 → 1/27 (4%) | **New emerging signal:** dedicated voice-agent postings (Anthropic Voice Platform, Cresta, AssemblyAI, Inflection) surfaced in 2026-09 but the volume is still very low in the LLM-App-Dev title pool. If it clears the bar, ownership belongs to [Applied AI Engineer](https://github.com/ai-engineering-curriculum/applied-ai-engineer-learning) or the Agentic AI family. Watch. |
+| Fluency with agentic coding tools (Claude Code, Cursor, Codex, Gemini CLI) as a stated requirement | 6/31 (19%) → 2/27 (7%) explicit but now phrased as "own every line" (Sourcegraph, Artefact) | Remains a prerequisite framing, not a curriculum target. |
+| Enterprise-system integration (Salesforce/SAP/ServiceNow) | 5/31 (16%) → 1/27 (4%) | Employer-specific; out of scope for a level-20 learning track. |
+| Domain compliance (HIPAA / SOC 2 / FedRAMP) | 7/31 (23%) → 0/27 (0%) | Employer-specific; belongs to Applied AI Engineer or the governance curriculum. |
 
 ## This-cycle decision summary
 
-- **Additions proposed:** none. See [`.aicg/curriculum-plan-delta.json`](.aicg/curriculum-plan-delta.json).
-- **Rationale:** Every above-threshold requirement in this role's ownership is already covered by mod-001. The two candidate gaps — dedicated tool/function-calling exercises (58%) and dedicated streaming exercises (26%) — are either exercised in a different framing (tool calling ⊂ existing structured-output drills) or below the 30% evidence bar (streaming). Higher-frequency items (RAG at 87%, agent frameworks at 77%, cloud deployment at 68%, evals at 65%) all belong to lower-siblings or higher-tier tracks per the ownership rule; this document links out to them rather than duplicating.
-- **Watch list for next cycle:** streaming/async (26%, growing), MCP / agent SDKs (13%, industry momentum), computer use (10%, provider-driven).
+- **Additions proposed (2026-09):** none. See [`.aicg/curriculum-plan-delta.json`](.aicg/curriculum-plan-delta.json).
+- **Rationale (2026-09 refresh):** The fresh 27-posting pass (2026-09-02) confirms the rank order of the 2026-08 baseline. Every above-threshold requirement in this role's ownership is already covered by mod-001, and the planned mod-002 through mod-007 already reserve capacity for the partial-coverage gaps (tool/function calling in mod-002, streaming/async in mod-003) — no scope adjustment is warranted in a 30-day cycle when the market rank didn't move. Emerging signals (MCP server dev, computer-use / browser automation, voice agents, LLM-observability-as-a-specialty) all remain below the 30% bar in this title pool, and — critically — all four belong to peer or higher tracks under the ownership rule (Agentic AI Developer for MCP/computer-use, Applied AI Engineer for voice deployment, AI Evaluation Engineer for observability). Duplicating them here would violate the ownership rule and displace continuity for content that is already funded elsewhere.
+- **Watch list for next cycle (updated 2026-09):**
+  - MCP server / tool-server development — hardened from "familiar with" to concrete build asks; if it clears 30% in the LLM-App-Dev pool, ownership belongs to Agentic AI Developer (raise a cross-track proposal there, not here).
+  - Computer-use / browser-automation agents — new dedicated postings at Snorkel AI and Kargo; same peer-ownership routing.
+  - Voice / multimodal agents — surfacing as a distinct sub-specialty at Anthropic, Cresta, AssemblyAI.
+  - Streaming / async — unchanged at ~26%; continues to sit as `gap-below-threshold` and is already the planned scope of mod-003.
