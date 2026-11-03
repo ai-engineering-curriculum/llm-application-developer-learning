@@ -1,5 +1,9 @@
 # LLM Application Developer Curriculum
 
+<!-- aicg:orientation:start -->
+> **Start here:** [Module 00: Your Relationship to the Model](lessons/00-your-relationship-to-the-model/README.md). Where this role sits relative to the model, what it owns, and who it works with across the five curricula.
+<!-- aicg:orientation:end -->
+
 **Role level:** 20 (application-developer craft — AI Engineering family)
 **Family:** AI Engineering
 **Status:** partly shipped, partly planned. `mod-001` is authored and released; `mod-002` through `mod-007` and the two projects are the planned scope, authored from [`.aicg/curriculum-plan.json`](.aicg/curriculum-plan.json). Lessons will be drafted by subsequent autonomous content cycles.
