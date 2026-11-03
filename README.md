@@ -1,5 +1,11 @@
 # AI Engineering · LLM Application Developer — Learning Repository
 
+> [!IMPORTANT]
+> **This track has been merged into [Agentic AI Developer](https://github.com/ai-engineering-curriculum/agentic-ai-developer-learning)** and this repository is archived.
+> The two level-20 tracks covered the same ground. The modules unique to this one now live there:
+> streaming & async → `mod-107`, model selection, cost & prompt caching → `mod-108`, minimal evals & regression checks → `mod-109`,
+> and the multi-provider comparison project → `project-103`. Start there instead.
+
 <!-- aicg:site-banner -->
 > 🎓 Part of the free, open-source **AI Career Curriculum** ecosystem — [Infrastructure](https://github.com/ai-infra-curriculum) · [ML Engineering](https://github.com/ml-engineering-curriculum) · [AI Engineering](https://github.com/ai-engineering-curriculum) · [Governance](https://github.com/ai-governance-curriculum) · [Startup](https://github.com/ai-startup-curriculum) · [Workforce](https://github.com/ai-workforce-curriculum).
 <!-- /aicg:site-banner -->
